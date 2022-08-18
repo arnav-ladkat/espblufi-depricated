@@ -14,5 +14,6 @@
 @end
 
 @interface SikrablufipluginPluginStreamHandler : NSObject<FlutterStreamHandler>
+@property(strong, nonatomic)FlutterMethodChannel *blu_channel;
 @property FlutterEventSink sink;
 @end
