@@ -56,7 +56,12 @@
   }
   else if([@"sendCustomData" isEqualToString:call.method]){
       NSLog(@"Sending Custom Data");
-      [self->_blufiClient postCustomData:[call.arguments[@"data"] data]];
+      // data is uint8list on flutter side, and FlutterStandardTypedData on ios side.
+      [self->_blufiClient
+       postCustomData: [FlutterStandardTypedData
+                        typedDataWithBytes:
+                            [call.arguments[@"data"] data]]
+          .data];
       result(nil);
   }
   else {
