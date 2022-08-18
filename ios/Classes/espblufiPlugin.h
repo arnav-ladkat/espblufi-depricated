@@ -10,9 +10,9 @@
 
 #import <Flutter/Flutter.h>
 
-@interface SikrablufipluginPlugin : NSObject<FlutterPlugin>
+@interface espblufiPlugin : NSObject<FlutterPlugin>
 @end
 
-@interface SikrablufipluginPluginStreamHandler : NSObject<FlutterStreamHandler>
+@interface espblufiPluginStreamHandler : NSObject<FlutterStreamHandler>
 @property FlutterEventSink sink;
 @end

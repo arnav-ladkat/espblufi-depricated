@@ -1,4 +1,4 @@
-package com.sikra.sikrablufiplugin;
+package com.sikra.espblufi;
 
 import androidx.annotation.NonNull;
 
@@ -8,8 +8,8 @@ import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 
-/** SikrablufipluginPlugin */
-public class SikrablufipluginPlugin implements FlutterPlugin, MethodCallHandler {
+/** espblufiPlugin */
+public class espblufiPlugin implements FlutterPlugin, MethodCallHandler {
   /// The MethodChannel that will the communication between Flutter and native Android
   ///
   /// This local reference serves to register the plugin with the Flutter Engine and unregister it
@@ -18,7 +18,7 @@ public class SikrablufipluginPlugin implements FlutterPlugin, MethodCallHandler 
 
   @Override
   public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
-    channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "sikrablufiplugin");
+    channel = new MethodChannel(flutterPluginBinding.getBinaryMessenger(), "espblufi");
     channel.setMethodCallHandler(this);
   }
 

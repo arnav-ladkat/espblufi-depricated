@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sikra.sikrablufiplugin_example">
+    package="com.sikra.espblufi_example">
    <application
-        android:label="sikrablufiplugin_example"
+        android:label="espblufi_example"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

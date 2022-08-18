@@ -1,6 +1,6 @@
-# sikrablufiplugin_example
+# espblufi_example
 
-Demonstrates how to use the sikrablufiplugin plugin.
+Demonstrates how to use the espblufi plugin.
 
 ## Getting Started
 

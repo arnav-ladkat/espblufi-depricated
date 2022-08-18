@@ -1,7 +1,6 @@
-name: sikrablufiplugin
+name: espblufi
 description: A new Flutter plugin project.
 version: 0.0.1
-homepage:
 
 environment:
   sdk: ">=2.17.1 <3.0.0"
@@ -35,10 +34,10 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.sikra.sikrablufiplugin
-        pluginClass: SikrablufipluginPlugin
+        package: com.sikra.espblufi
+        pluginClass: espblufiPlugin
       ios:
-        pluginClass: SikrablufipluginPlugin
+        pluginClass: espblufiPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

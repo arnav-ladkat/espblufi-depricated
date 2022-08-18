@@ -1,4 +1,4 @@
-package com.sikra.sikrablufiplugin_example;
+package com.sikra.espblufi_example;
 
 import io.flutter.embedding.android.FlutterActivity;
 

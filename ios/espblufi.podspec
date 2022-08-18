@@ -1,9 +1,9 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint sikrablufiplugin.podspec` to validate before publishing.
+# Run `pod lib lint espblufi.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'sikrablufiplugin'
+  s.name             = 'espblufi'
   s.version          = '0.0.1'
   s.summary          = 'A new Flutter plugin project.'
   s.description      = <<-DESC
@@ -19,7 +19,7 @@ A new Flutter plugin project.
   'Classes/BlufiLibrary/**/*{.h,.cpp,.a}'
   s.dependency 'Flutter'
   s.platform = :ios, '11.0'
-  s.ios.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SRCROOT)/../.symlinks/plugins/sikrablufiplugin/ios/Classes/BlufiLibrary/Security/openssl/include" }
+  s.ios.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SRCROOT)/../.symlinks/plugins/espblufi/ios/Classes/BlufiLibrary/Security/openssl/include" }
   s.ios.vendored_libraries = 'Classes/BlufiLibrary/Security/openssl/*{.a}'
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }

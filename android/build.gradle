@@ -1,4 +1,4 @@
-group 'com.sikra.sikrablufiplugin'
+group 'com.sikra.espblufi'
 version '1.0'
 
 buildscript {

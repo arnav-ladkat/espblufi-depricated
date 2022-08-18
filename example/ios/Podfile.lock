@@ -1,22 +1,22 @@
 PODS:
-  - Flutter (1.0.0)
-  - sikrablufiplugin (0.0.1):
+  - espblufi (0.0.1):
     - Flutter
+  - Flutter (1.0.0)
 
 DEPENDENCIES:
+  - espblufi (from `.symlinks/plugins/espblufi/ios`)
   - Flutter (from `Flutter`)
-  - sikrablufiplugin (from `.symlinks/plugins/sikrablufiplugin/ios`)
 
 EXTERNAL SOURCES:
+  espblufi:
+    :path: ".symlinks/plugins/espblufi/ios"
   Flutter:
     :path: Flutter
-  sikrablufiplugin:
-    :path: ".symlinks/plugins/sikrablufiplugin/ios"
 
 SPEC CHECKSUMS:
+  espblufi: 90869370da3db76a2c78b5401148e3f9ce631774
   Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
-  sikrablufiplugin: a64c6c0b73e40b16a69fec580be4f1b36986b522
 
-PODFILE CHECKSUM: 8e679eca47255a8ca8067c4c67aab20e64cb974d
+PODFILE CHECKSUM: e5ee00144d04e7b168ba7ea28a9753540e444f3d
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

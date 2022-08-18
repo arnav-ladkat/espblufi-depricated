@@ -1,24 +1,24 @@
-#import "SikrablufipluginPlugin.h"
+#import "espblufiPlugin.h"
 #import "BlufiLibrary/BlufiClient.h"
 #import <CoreLocation/CoreLocation.h>
 #import <SystemConfiguration/CaptiveNetwork.h>
 
 
-@interface SikrablufipluginPlugin() <CBCentralManagerDelegate, CBPeripheralDelegate, BlufiDelegate>
+@interface espblufiPlugin() <CBCentralManagerDelegate, CBPeripheralDelegate, BlufiDelegate>
 @property(strong, nonatomic)BlufiClient *blufiClient;
 @property(assign, atomic)BOOL connected;
 @property(strong, nonatomic)FlutterMethodChannel *channel;
-@property(nonatomic, retain) SikrablufipluginPluginStreamHandler *stateStreamHandler;
+@property(nonatomic, retain) espblufiPluginStreamHandler *stateStreamHandler;
 @end
 
-@implementation SikrablufipluginPlugin
+@implementation espblufiPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
   FlutterMethodChannel* channel = [FlutterMethodChannel
-      methodChannelWithName:@"sikrablufiplugin"
+      methodChannelWithName:@"espblufi"
             binaryMessenger:[registrar messenger]];
     
 
-  SikrablufipluginPlugin* instance = [[SikrablufipluginPlugin alloc] init];
+  espblufiPlugin* instance = [[espblufiPlugin alloc] init];
     instance->_channel = channel;
   [registrar addMethodCallDelegate:instance channel:channel];
 }
