@@ -56,8 +56,7 @@
   }
   else if([@"sendCustomData" isEqualToString:call.method]){
       NSLog(@"Sending Custom Data");
-      NSData* data = [call.arguments[@"data"]  dataUsingEncoding: NSUTF8StringEncoding];
-      [self->_blufiClient postCustomData:data];
+      [self->_blufiClient postCustomData:[call.arguments[@"data"] data]];
       result(nil);
   }
   else {
