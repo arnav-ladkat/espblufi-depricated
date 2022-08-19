@@ -3,6 +3,7 @@ import 'dart:typed_data';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import 'espblufi_method_channel.dart';
+import 'models/wifi_devices.dart';
 
 abstract class EspblufiPlatform extends PlatformInterface {
   /// Constructs a espblufiPlatform.
@@ -31,5 +32,21 @@ abstract class EspblufiPlatform extends PlatformInterface {
 
   Future<void> sendCustomData(Uint8List data) {
     throw UnimplementedError('sendCustomData() has not been implemented.');
+  }
+
+  Future<void> requestConnection(String deviceID) {
+    throw UnimplementedError('requestConnection() has not been implemented.');
+  }
+
+  Future<void> scanWifi() {
+    throw UnimplementedError('scanWifi() has not been implemented.');
+  }
+
+  Future<void> configureWifi(String name, String pass) {
+    throw UnimplementedError('configureWifi() has not been implemented.');
+  }
+
+  Stream<List<WifiDevices>> get wifiDevices {
+    throw UnimplementedError('configureWifi() has not been implemented.');
   }
 }
