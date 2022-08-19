@@ -5,8 +5,8 @@ import 'package:flutter/services.dart';
 
 import 'espblufi_platform_interface.dart';
 
-/// An implementation of [espblufiPlatform] that uses method channels.
-class MethodChannelespblufi extends espblufiPlatform {
+/// An implementation of [EspblufiPlatform] that uses method channels.
+class MethodChannelespblufi extends EspblufiPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
   final methodChannel = const MethodChannel('espblufi');
@@ -19,6 +19,7 @@ class MethodChannelespblufi extends espblufiPlatform {
   }
 
   // uint8list datatype to allow for only protobuf encoded streams
+  @override
   Future<void> sendCustomData(Uint8List data) async {
     final String? result =
         await methodChannel.invokeMethod('sendCustomData', {'data', data});

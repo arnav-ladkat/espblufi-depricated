@@ -1,7 +1,7 @@
 import 'espblufi_platform_interface.dart';
 
-class espblufi {
+class Espblufi {
   Future<String?> getPlatformVersion() {
-    return espblufiPlatform.instance.getPlatformVersion();
+    return EspblufiPlatform.instance.getPlatformVersion();
   }
 }
